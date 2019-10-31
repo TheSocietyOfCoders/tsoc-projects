@@ -40,24 +40,26 @@ Your task is to implement linear regression from scratch on data with a single f
 2. Plot the X and y as a scatter plot using matplotlib   
 3. Write a function **find_cost(X, y, parameters)**, with the following parameters -   
    - This function computes the cost using quadratic cost function   
-   - Inputs   
-      a. X - The X values   
-      b. y - The target/y values   
-      c. parameters - The parameter vector   
-   - Output    
-      a. cost - Cost for the given values   
+   - **Inputs**   
+   >   a. **X** - The X values   
+   >   b. **y** - The target/y values   
+   >   c. **parameters** - The parameter vector   
+  
+   - **Output**    
+   >   a. **cost** - Cost for the given values   
       
 4. Write a function **fit_data(X, y, parameters, learning_rate, iterations)** with the following parameters -  
    - This function finds the closest line using gradient descent for optimization   
-   - Inputs    
-      a. X - The X values   
-      b. y - The target/y values    
-      c. parameters - The parameter vector    
-      d. learning_rate - Learning rate, with default = 0.1   
-      e. iterations - The number of iterations, with default = 10000    
-   - Outputs -    
-      a. past_costs - The cost after each iteration    
-      b. past_parameters - The parameters after each iteration    
+   - **Inputs**    
+   >   a. **X** - The X values   
+   >   b. **y** - The target/y values    
+   >   c. **parameters** - The parameter vector    
+   >   d. **learning_rate** - Learning rate, with default = 0.1   
+   >   e. **iterations** - The number of iterations, with default = 10000    
+   
+   - **Outputs**    
+   >   a. **past_costs** - The cost after each iteration    
+   >   b. **past_parameters** - The parameters after each iteration    
       
 5. Plot the line which you obtain using the final parameters along with the data    
 6. Plot the cost after each iteration    
