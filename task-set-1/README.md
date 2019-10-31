@@ -15,7 +15,7 @@ The first task will be to get up and running with using this repository.
 2. Make a clone of the forked repository.
    
    *This will create a local version of this repository on your system. All changes that you will make wil be to this local version.*
-3. Navigate to task-set-1, go to submissions, and create your directory (i.e. *your_git_username*).
+3. Navigate to **task-set-1**, go to **submissions**, and create your directory (i.e. **your_git_username**).
 4. Add the solution files in this directory.
 5. Once you have completed all your tasks, push the local version of your repository.
 6. Open GitHub in your web browser. Search for your repository.  Click the "**Pull Request**" button.
