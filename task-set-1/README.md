@@ -14,7 +14,7 @@ The first task will be to get up and running with using this repository.
 1. Fork this repository.
 2. Make a clone of the forked repository.
    
-   *This will create a local version of this repository on your system. All changes that you will make wil be to this local version. Make sure that you add the upstream remote to this local repository. You will have to routinely update your repository with the upstream*  
+   *This will create a local version of this repository on your system. All changes that you will make wil be to this local version. Make sure that you add the upstream remote to this local repository. You will have to routinely update your repository with the upstream.*  
    
 3. Navigate to **task-set-1**, go to **submissions**, and create your directory (i.e. **your_git_username**).
 4. Add the solution files in this directory.
@@ -33,7 +33,8 @@ The first task will be to get up and running with using this repository.
 
 Linear Regression from scratch  
 
-Do this task in a Jupyter notebook
+Do this task in **Jupyter notebook**.
+
 Your task is to implement linear regression from scratch on data with a single feature. You will fit a straight line to the given data. 
 
 1. Read the data from data.csv   
