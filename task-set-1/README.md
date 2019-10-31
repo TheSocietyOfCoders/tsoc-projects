@@ -18,7 +18,8 @@ The first task will be to get up and running with using this repository.
 3. Navigate to **task-set-1**, go to **submissions**, and create your directory (i.e. **your_git_username**).
 4. Add the solution files in this directory.
 5. Once you have completed all your tasks, push the local version of your repository.
-6. Open GitHub in your web browser. Search for your repository.  Click the "**Pull Request**" button.
+6. Open GitHub in your web browser. Search for your repository.  Click the "**Pull Request**" tab.
+7. Click on the "**New pull request**" button, and then click on the "**Create pull request**" button. 
 7. Well done! You have successfully submitted your progress.
 
 ### Some useful links for your reference purpose
