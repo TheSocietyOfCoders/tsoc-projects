@@ -31,9 +31,10 @@ The first task will be to get up and running with using this repository.
 
 ### Task 2 
 
-Linear Regression from scratch  
+#### Linear Regression from scratch  
 
-Do this task in a Jupyter notebook
+Do this task in **Jupyter notebook**   
+  
 Your task is to implement linear regression from scratch on data with a single feature. You will fit a straight line to the given data. 
 
 1. Read the data from data.csv   
