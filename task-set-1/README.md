@@ -17,7 +17,7 @@ The first task will be to get up and running with using this repository.
    *This will create a local version of this repository on your system. All changes that you will make wil be to this local version. Make sure that you add the upstream remote to this local repository. You will have to routinely update your repository with the upstream*  
    
 3. Navigate to **task-set-1**, go to **submissions**, and create your directory (i.e. **your_git_username**).
-4. In the future, you will add the solution files in this directory. For now, just add a text file called "sample.txt".  
+4. In the future, you will add the solution files in this directory. For now, just add a text file called "details.txt", which wil contain your name and your branch.  
 5. Commit these changes, and push to your github repo. 
 6. Open GitHub in your web browser. Search for your repository.  Click the "**Pull Request**" tab.
 7. Click on the "**New pull request**" button, and then click on the "**Create pull request**" button. 
