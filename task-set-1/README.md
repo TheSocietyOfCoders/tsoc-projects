@@ -78,7 +78,7 @@ You have to finish the following subtasks -
    - **Inputs**
       - word_list - List of words sorted lexicographically 
       - string - The string which you want to match other string to 
-   - **Outputs **
+   - **Outputs**
       - matching_strings - An array of strings which start with the given string 
 
 5. Finally, write a command-line based interface which takes in an input and outputs matching strings.   
