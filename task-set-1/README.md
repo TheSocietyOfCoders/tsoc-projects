@@ -55,12 +55,12 @@ You have to finish the following subtasks -
 2. Write a function *sort_words(word_list)* 
    - This function sorts the given wordlist lexicographically 
    - **Do not use any in-built sorting function** 
-   - **Inputs**
+   - **Input**
       - word_list - List of words that you wish to sort 
-   - **Outputs**
+   - **Output**
       - sorted_word_list - List of words sorted according to their lexicographic order 
       
-3. For the following function, we will need a helper function, *range_finder(A, E)*. The task of this helper function will be as follows - 
+(Optional) 3. For the optimal completion of the following function, we will need a helper function, *range_finder(A, E)*. You can skip implementing this function if you want an easier implementation. The task of this helper function will be as follows - 
    - Given a sorted array A and an element E, return two indices - I<sub>0</sub> and I<sub>01</sub>. 
    I<sub>0</sub> is the first index such that A<sub>I<sub>0</sub></sub> is equal to E and I<sub>1</sub> is the last index such that A<sub>I<sub>1</sub></sub> is equal to E.   
    Essentially, find all the instances of the element E in the array.  
@@ -69,16 +69,16 @@ You have to finish the following subtasks -
       - I<sub>0</sub> = 2, I<sub>1</sub> = 4   
    - Perform this task using binary search. Hint - Binary search can do more than just searching for an element. You will need to do two passes of binary search.  
    - *Can you tell why we're using binary search instead of linear search?*  
-
+   
 4. Write a function *find_matching_word(word_list, string)*
-   - This function will find words which start with the given string 
-   - **Utilize *range_finder* for this, not linear search**. We didn't do all that sorting for nothing, did we now. You will have to slightly modify it as follows  
+   - This function will find words which start with the given string. Use either the binary search method, or linear search. 
+   - **For the binary search based implementation, we will use *range_finder* for this. You will have to slightly modify it as follows**   
       - It will have to work for strings 
-      - It will need to treat strings which start with the same characters as the same. Eg. 'th' and 'the' are the same for the purposes of this. 
+      - It will need to treat strings which have the given string as prefix as the same. Eg. 'th' should match 'the', 'this' etc for the purposes of this. 
    - **Inputs**
       - word_list - List of words sorted lexicographically 
       - string - The string which you want to match other string to 
-   - **Outputs**
+   - **Output**
       - matching_strings - An array of strings which start with the given string 
 
 5. Finally, write a command-line based interface which takes in an input and outputs matching strings.   
