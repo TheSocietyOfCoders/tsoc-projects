@@ -31,35 +31,57 @@ The first task will be to get up and running with using this repository.
 
 ### Task 2 
 
-#### Linear Regression from scratch  
+#### Naive Autocompletion  
 
-Do this task in **Jupyter notebook**   
+This task can be done in any language of your choice. 
+
+For this task, you are given two text files - words.txt and words_with_counts.txt
+
+You have to work with words.txt but can choose to work with words_with_counts.txt for an additional challenge, which has been described at the end.  
+
+Your task will be to implement an autocomplete feature. The program will ask the user for a string and then print some strings which have the given string as a prefix.  
+Eg - For an input string of "th", the output might be "the", "that", "that", "this". 
+This output depends on the dictionary available to you.  
+ 
+You have to finish the following subtasks -  
+1. Write a function *read_txt_file(txt_file)*
+   - This function will read the given text file and return an array with the words in the text file 
+   ## - Input 
+      - txt_file - String containing the path to the text file 
+   ## - Output 
+      - word_list - An array containing all the words in the text file  
+
+2. Write a function *sort_words(word_list)* 
+   - This function sorts the given wordlist lexicographically 
+   - **Do not use any in-built sorting function** 
+   - **Inputs**
+      - word_list - List of words that you wish to sort 
+   - **Outputs**
+      - sorted_word_list - List of words sorted according to their lexicographic order 
+      
+3. For the following function, we will need a helper function, *range_finder(A, E)*. The task of this helper function will be as follows - 
+   - Given a sorted array A and an element E, return two indices - I<sub>0</sub> and I<sub>01</sub>. 
+   I<sub>0</sub> is the first index such that A<sub>I<sub>0</sub></sub> is equal to E and I<sub>1</sub> is the last index such that A<sub>I<sub>1</sub></sub> is equal to E.   
+   Essentially, find all the instances of the element E in the array.  
+   - Example 
+      - A = \[1,2,3,3,3,4], E = 3. 
+      - I<sub>0</sub> = 2, I<sub>1</sub> = 4   
+   - Perform this task using binary search. Hint - Binary search can do more than just searching for an element. You will need to do two passes of binary search.  
+   - *Can you tell why we're using binary search instead of linear search?*  
+
+4. Write a function *find_matching_word(word_list, string)*
+   - This function will find words which start with the given string 
+   - **Utilize *range_finder* for this, not linear search**. We didn't do all that sorting for nothing, did we now. You will have to slightly modify it as follows  
+      - It will have to work for strings 
+      - It will need to treat strings which start with the same characters as the same. Eg. 'th' and 'the' are the same for the purposes of this. 
+   ## - Inputs 
+      - word_list - List of words sorted lexicographically 
+      - string - The string which you want to match other string to 
+   ## - Outputs 
+      - matching_strings - An array of strings which start with the given string 
+
+5. Finally, write a command-line based interface which takes in an input and outputs matching strings.   
   
-Your task is to implement linear regression from scratch on data with a single feature. You will fit a straight line to the given data. 
-
-1. Read the data from data.csv   
-2. Plot the X and y as a scatter plot using matplotlib   
-3. Write a function **find_cost(X, y, parameters)**, with the following parameters -   
-   - This function computes the cost using quadratic cost function   
-   - Inputs   
-      a. X - The X values   
-      b. y - The target/y values   
-      c. parameters - The parameter vector   
-   - Output    
-      a. cost - Cost for the given values   
-      
-4. Write a function **fit_data(X, y, parameters, learning_rate, iterations)** with the following parameters -  
-   - This function finds the closest line using gradient descent for optimization   
-   - Inputs    
-      a. X - The X values   
-      b. y - The target/y values    
-      c. parameters - The parameter vector    
-      d. learning_rate - Learning rate, with default = 0.1   
-      e. iterations - The number of iterations, with default = 10000    
-   - Outputs -    
-      a. past_costs - The cost after each iteration    
-      b. past_parameters - The parameters after each iteration    
-      
-5. Plot the line which you obtain using the final parameters along with the data    
-6. Plot the cost after each iteration    
-7. Additional challenge - Animate the line using parameters after each iteration    
+Additional Challenge - For additional challenge, use word_with_counts and sort the words according to two orders - primarily, their lexicographic order. Secondarily, the value of their frequency counts. Your autocomplete program will now sort its outputs according to the frequency of the words.   
+ 
+**Avoid using in-built functions for tasks such as sorting, finding etc.** 
