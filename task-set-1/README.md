@@ -33,7 +33,8 @@ The first task will be to get up and running with using this repository.
 
 #### Naive Autocompletion  
 
-This task can be done in any language of your choice. 
+This task can be done in any language of your choice. **Avoid using in-built functions for tasks such as sorting, finding etc.** 
+
 
 For this task, you are given two text files - words.txt and words_with_counts.txt
 
@@ -46,9 +47,9 @@ This output depends on the dictionary available to you.
 You have to finish the following subtasks -  
 1. Write a function *read_txt_file(txt_file)*
    - This function will read the given text file and return an array with the words in the text file 
-   ## - Input 
+   - **Input**
       - txt_file - String containing the path to the text file 
-   ## - Output 
+   - **Output** 
       - word_list - An array containing all the words in the text file  
 
 2. Write a function *sort_words(word_list)* 
@@ -74,14 +75,13 @@ You have to finish the following subtasks -
    - **Utilize *range_finder* for this, not linear search**. We didn't do all that sorting for nothing, did we now. You will have to slightly modify it as follows  
       - It will have to work for strings 
       - It will need to treat strings which start with the same characters as the same. Eg. 'th' and 'the' are the same for the purposes of this. 
-   ## - Inputs 
+   - **Inputs**
       - word_list - List of words sorted lexicographically 
       - string - The string which you want to match other string to 
-   ## - Outputs 
+   - **Outputs **
       - matching_strings - An array of strings which start with the given string 
 
 5. Finally, write a command-line based interface which takes in an input and outputs matching strings.   
   
 Additional Challenge - For additional challenge, use word_with_counts and sort the words according to two orders - primarily, their lexicographic order. Secondarily, the value of their frequency counts. Your autocomplete program will now sort its outputs according to the frequency of the words.   
  
-**Avoid using in-built functions for tasks such as sorting, finding etc.** 
