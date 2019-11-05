@@ -1,22 +1,22 @@
-# Task Set 1 
+# Project Set 1 
 
-### Task 1
+### Project 1
 
 The structure of this repository is as follows: 
->- **task-set-1**
+>- **project-set-1**
 >  - **submissions** 
 >    - **your_git_username** (You have to make this directory) 
->      - *task1.py*
->      - *task2.py*  
+>      - *project1.py*
+>      - *project2.py*  
 
-The first task will be to get up and running with using this repository. 
+The first project will be to get up and running with using this repository. 
 
 1. Fork this repository.
 2. Make a clone of the forked repository.
    
    *This will create a local version of this repository on your system. All changes that you will make wil be to this local version. Make sure that you add the upstream remote to this local repository. You will have to routinely update your repository with the upstream*  
    
-3. Navigate to **task-set-1**, go to **submissions**, and create your directory (i.e. **your_git_username**).
+3. Navigate to **project-set-1**, go to **submissions**, and create your directory (i.e. **your_git_username**).
 4. In the future, you will add the solution files in this directory. For now, just add a text file called "details.txt", which wil contain your name and your branch.  
 5. Commit these changes, and push to your github repo. 
 6. Open GitHub in your web browser. Search for your repository.  Click the "**Pull Request**" tab.
@@ -29,22 +29,22 @@ The first task will be to get up and running with using this repository.
 2. [Step Wise Guide to start with Open Source](https://www.geeksforgeeks.org/step-wise-guide-to-start-with-open-source/)
  
 
-### Task 2 
+### Project 2 
 
 #### Naive Autocompletion  
 
-This task can be done in any language of your choice. **Avoid using in-built functions for tasks such as sorting, finding etc.** 
+This project can be done in any language of your choice. **Avoid using in-built functions for projects such as sorting, finding etc.** 
 
 
-For this task, you are given two text files - words.txt and words_with_counts.txt
+For this project, you are given two text files - words.txt and words_with_counts.txt
 
 You have to work with words.txt but can choose to work with words_with_counts.txt for an additional challenge, which has been described at the end.  
 
-Your task will be to implement an autocomplete feature. The program will ask the user for a string and then print some strings which have the given string as a prefix.  
+Your project will be to implement an autocomplete feature. The program will ask the user for a string and then print some strings which have the given string as a prefix.  
 Eg - For an input string of "th", the output might be "the", "that", "that", "this". 
 This output depends on the dictionary available to you.  
  
-You have to finish the following subtasks -  
+You have to finish the following subprojects -  
 1. Write a function *read_txt_file(txt_file)*
    - This function will read the given text file and return an array with the words in the text file 
    - **Input**
@@ -60,14 +60,14 @@ You have to finish the following subtasks -
    - **Output**
       - sorted_word_list - List of words sorted according to their lexicographic order 
       
-(Optional) 3. For the optimal completion of the following function, we will need a helper function, *range_finder(A, E)*. You can skip implementing this function if you want an easier implementation. The task of this helper function will be as follows - 
+(Optional) 3. For the optimal completion of the following function, we will need a helper function, *range_finder(A, E)*. You can skip implementing this function if you want an easier implementation. The project of this helper function will be as follows - 
    - Given a sorted array A and an element E, return two indices - I<sub>0</sub> and I<sub>01</sub>. 
    I<sub>0</sub> is the first index such that A<sub>I<sub>0</sub></sub> is equal to E and I<sub>1</sub> is the last index such that A<sub>I<sub>1</sub></sub> is equal to E.   
    Essentially, find all the instances of the element E in the array.  
    - Example 
       - A = \[1,2,3,3,3,4], E = 3. 
       - I<sub>0</sub> = 2, I<sub>1</sub> = 4   
-   - Perform this task using binary search. Hint - Binary search can do more than just searching for an element. You will need to do two passes of binary search.  
+   - Perform this project using binary search. Hint - Binary search can do more than just searching for an element. You will need to do two passes of binary search.  
    - *Can you tell why we're using binary search instead of linear search?*  
    
 4. Write a function *find_matching_word(word_list, string)*
